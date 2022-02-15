@@ -17,11 +17,11 @@ public abstract class Shape {
     }
 
     private double CalculateSideLength(Point point0, Point point1){
-        //Does the GetSideLength math work stuff
+        return CalculateSideLength(point0,point1);
     }
 
     public double GetPerimeter(){
-        //Does the Perimeter Math Work Stuff
+       return 3;
     }
 
 
