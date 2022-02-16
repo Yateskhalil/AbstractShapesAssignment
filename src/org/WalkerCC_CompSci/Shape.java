@@ -16,14 +16,21 @@ public abstract class Shape {
         }
     }
 
-    private double CalculateSideLength(Point point0, Point point1){
-        return CalculateSideLength(point0,point1);
+    public double CalculateSideLength(Point point0, Point point1){
+        double x0=point0.getX();
+        double y0=point0.getY();
+        double x1=point1.getX();
+        double y1=point1.getY();
+
+        return Math.sqrt((x1-x0)*(x1-x0)+(y1-y0)*(y1-y0));
+
+
     }
 
     public double GetPerimeter(){
-       return 3;
+
+        return CalculateSideLength(listOfPoints[0],listOfPoints[1]);
+
     }
-
-
 
 }
